@@ -1,0 +1,19 @@
+.statsItem {
+  display: flex;
+  flex-direction: column;
+  flex-basis: calc(100% / 5);
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.statsLabel {
+  font-size: 20px;
+  color: #fff;
+}
+
+.percentage {
+  margin-top: 10px;
+  font-size: 22px;
+  color: #fff;
+}
