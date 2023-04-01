@@ -1,16 +1,12 @@
+import css from './app/app.module.css';
+import { Profile } from './profile/Profile';
+import events from '../data/user.json';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <section className={css.section}>
+      <Profile user={events} />
+    
+    </section>
   );
 };
