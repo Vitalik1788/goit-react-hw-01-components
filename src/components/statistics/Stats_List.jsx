@@ -1,5 +1,5 @@
 import css from './StatsList.module.css';
-import Function from '../../random_colour';
+import Function from '../../utils/random_colour';
 
 export const StatsList = ({label, amount}) => {
   return (
