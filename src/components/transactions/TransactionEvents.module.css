@@ -1,0 +1,19 @@
+.tableD {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid lightgray;
+  color: gray;
+}
+
+.tableD::first-letter {
+  text-transform: uppercase;
+}
+
+.tableRow:nth-child(2n+1) {
+  background-color: #fff;
+}
+
+.tableRow:nth-child(2n) {
+  background-color: lightgray;
+}
+
