@@ -10,7 +10,6 @@ import { Statistics } from './statistics/Statistics';
 import { FriendList } from './friends/FriendList';
 import { TransactionHistory } from './transactions/TransactionHistory';
 
-
 export const App = () => {
   return (
     <section className={css.section}>

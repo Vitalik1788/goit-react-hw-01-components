@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import { VscCircleFilled } from "react-icons/vsc";
 import css from './FriendListItem.module.css';
 
@@ -10,4 +12,10 @@ export const FriendListItem = ({ avatar, name, status }) => {
       <p className={css.friendName}>{name}</p>
     </li>
   )
+}
+
+FriendListItem.propTypes = {
+  avatar: PropTypes.string,
+  name: PropTypes.string.isRequired,
+  status: PropTypes.bool.isRequired, 
 }

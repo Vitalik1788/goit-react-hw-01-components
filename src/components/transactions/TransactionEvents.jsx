@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import css from './TransactionEvents.module.css';
 
 export const TransactionEvents = ({type, amount, currency}) => {
@@ -8,5 +9,10 @@ export const TransactionEvents = ({type, amount, currency}) => {
       <td className={css.tableD}>{currency}</td>
     </tr>
   )
+}
 
+TransactionEvents.propTypes = {
+  type: PropTypes.string.isRequired,
+  amount: PropTypes.string.isRequired,
+  currency: PropTypes.string.isRequired,
 }
