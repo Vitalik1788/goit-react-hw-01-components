@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 import { VscCircleFilled } from "react-icons/vsc";
-import css from './FriendListItem.module.css';
+import css from './Friends_Items.module.css';
 
 export const FriendListItem = ({ avatar, name, status }) => {
   

@@ -8,7 +8,7 @@ import css from './app/app.module.css';
 import { Profile } from './profile/Profile';
 import { Statistics } from './statistics/Statistics';
 import { FriendList } from './friends/FriendList';
-import { TransactionHistory } from './transactions/TransactionHistory';
+import { TransactionList } from './transactions/TransactionList';
 
 export const App = () => {
   return (
@@ -28,7 +28,7 @@ export const App = () => {
 
       <FriendList friends={friends} />
 
-      <TransactionHistory transactions={transactions} />
+      <TransactionList transactions={transactions} />
     </section>
   );
 };

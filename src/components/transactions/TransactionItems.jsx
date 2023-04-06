@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
-import css from './TransactionEvents.module.css';
+import css from './Transaction_Items.module.css';
 
-export const TransactionEvents = ({type, amount, currency}) => {
+export const TransactionItems = ({type, amount, currency}) => {
   return (
     <tr className={css.tableRow}>
       <td className={css.tableD}>{type}</td>
@@ -11,7 +11,7 @@ export const TransactionEvents = ({type, amount, currency}) => {
   )
 }
 
-TransactionEvents.propTypes = {
+TransactionItems.propTypes = {
   type: PropTypes.string.isRequired,
   amount: PropTypes.string.isRequired,
   currency: PropTypes.string.isRequired,
