@@ -13,9 +13,21 @@ import { TransactionHistory } from './transactions/TransactionHistory';
 export const App = () => {
   return (
     <section className={css.section}>
-      <Profile user={events} />
-      <Statistics userStats={stats} />
+      <Profile
+        username={events.username}
+        tag={events.tag}
+        location={events.location}
+        avatar={events.avatar}
+        stats={events.stats}
+      />
+
+      <Statistics
+        title={'Upload stats'}
+        userStats={stats}
+      />
+
       <FriendList friends={friends} />
+
       <TransactionHistory transactions={transactions} />
     </section>
   );

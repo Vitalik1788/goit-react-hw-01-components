@@ -9,7 +9,6 @@ export const StatsList = ({label, amount}) => {
       <span className={css.percentage}>{amount}%</span>
     </li>
   )
-
 }
 
 StatsList.propType = {
